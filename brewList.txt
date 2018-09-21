@@ -1,0 +1,9 @@
+autojump
+emacs
+gdbm
+htop
+pcre
+ranger
+tmux
+tree
+vifm

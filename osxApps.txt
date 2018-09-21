@@ -1,0 +1,9 @@
+Alfred 3
+Contexts
+GIPHY CAPTURE
+Google Chrome
+Google Drive
+Spectacle
+The Unarchiver
+VirtualBox
+Visual Studio Code

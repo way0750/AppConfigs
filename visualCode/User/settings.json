@@ -1,0 +1,73 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "editor.lineNumbers": "relative",
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+
+    ],
+    "vim.otherModesKeyBindings": [
+      // {
+      //   "before": ["Cmd", "j"],
+      //   "after": ["ctrl", "d"],
+      // }
+      {
+        "before": ["Cmd", "r"],
+        "after": ["<leader>", "<leader>", "s"],
+      }
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+      // {
+      //   "before": ["Cmd", "j"],
+      //   "after": ["ctrl", "d"],
+      // }
+      {
+        "before": ["Cmd", "r"],
+        "after": ["<leader>", "<leader>", "s"],
+      }
+    ],
+    "wayExt.scrollLineCount": 20,
+    "wayExt.scrollSpeed": 10,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.minimap.enabled": false,
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "normal": ["#8FBCBB", "#434C5E"],
+        "insert": "#BF616A",
+        "visual": "#B48EAD",
+        "visualline": "#B48EAD",
+        "visualblock": "#A3BE8C",
+        "replace": "#D08770"
+    },
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#8FBCBB",
+      "statusBar.noFolderBackground": "#8FBCBB",
+      "statusBar.debuggingBackground": "#8FBCBB",
+      "editor.selectionBackground": "#135564",
+      "editor.selectionHighlightBackground": "#135564",
+      "statusBar.foreground": "#434C5E"
+    },
+    "workbench.activityBar.visible": false,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.renderWhitespace": "none",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "search.location": "panel",
+    "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
+    "editor.fontFamily": "Roboto Mono Thin for Powerline, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "vsicons.projectDetection.disableDetect": true,
+    "editor.tokenColorCustomizations": {
+      "comments": "#d4922f"
+  },
+  "window.zoomLevel": 1,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "markdown-preview-enhanced.liveUpdate": true,
+  "workbench.startupEditor": "newUntitledFile"
+}
