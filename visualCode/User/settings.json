@@ -60,7 +60,7 @@
     "editor.tokenColorCustomizations": {
       "comments": "#d4922f"
   },
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "files.associations": {
     "*.css": "postcss"
   },

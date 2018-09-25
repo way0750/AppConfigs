@@ -2,13 +2,19 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/wayhuang/.oh-my-zsh
+export ZSH=/Users/huiqianghuang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +58,10 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode zsh-vimode-visual history)
+plugins=(
+  git
+  autojump
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,36 +94,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cls="clear"
-alias gc="git checkout $1; git status"
 alias gs="git status"
-alias gp="git pull"
-alias gdif="git diff"
-alias gpus="git push"
-alias gpul="git pull"
-alias gcom="git commit"
-
-# w = work, s = start
-alias wsui="k9; cd ~/repos/marin-ui/; npm run start-dev";
-alias wsapi="cd ~/repos/marin-api; npm run watch & echo you might get certain module not found error but that is ok I think... ; npm run start-dev";
-alias wsapidebug="cd ~/repos/marin-api; npm run watch & echo sleeping for 10 seconds then run the debugger; sleep 10; nodemon --inspect ./bootstrap/bootstrap.js --raw --run api-service | bunyan";
-alias gsall="j marin-ui; gs; j api; gs; j shared; gs; j i18; gs; j sso; gs";
-alias sharedcompile="echo gonna compile shared js; cd ~/repos/marin-shared-js; npm run compile"
-alias gbl="git branch --sort=committerdate; echo bottom of list is freshest!"
-
-export PATH=/Applications/apache-maven-3.5.2/bin:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
-
-# for autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export PATH=/Users/wayhuang/scripts/:$PATH
-export PATH=/Users/wayhuang/scripts/work/:$PATH
-export PATH=/Users/wayhuang/repos/marin-fend-tools/cmds/:$PATH
-export PATH=/usr/local/mysql/bin/:$PATH
-export PATH=/Applications/redis-4.0.9/src:$PATH
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-nvm use 6.10.2
+alias gadd='echo $@ && git add $@'
