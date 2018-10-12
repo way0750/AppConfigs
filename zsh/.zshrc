@@ -97,4 +97,6 @@ source $ZSH/oh-my-zsh.sh
 alias cls="clear"
 alias gs="git status"
 alias gadd='echo $@ && git add $@'
+
+# below line allows using vi to edit the current line in terminal
 set -o vi
