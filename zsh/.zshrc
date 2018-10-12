@@ -97,3 +97,4 @@ source $ZSH/oh-my-zsh.sh
 alias cls="clear"
 alias gs="git status"
 alias gadd='echo $@ && git add $@'
+set -o vi
